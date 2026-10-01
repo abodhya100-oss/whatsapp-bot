@@ -1,0 +1,135 @@
+
+🔥 نظام محل الغلا متصل! زيادة السعر (+100) تعمل بدقة مع حماية الذاكرة.
+
+🔥 نظام محل الغلا متصل! زيادة السعر (+100) تعمل بدقة مع حماية الذاكرة.
+
+🔥 نظام محل الغلا متصل! زيادة السعر (+100) تعمل بدقة مع حماية الذاكرة.
+Al-Ghala Bot is online and responding to everyone!
+Al-Ghala Bot is online and responding to everyone!
+Al-Ghala Bot is online with full menu & +100 transfer feature!
+Al-Ghala Bot is online with image sending feature!
+Al-Ghala Bot is online with exact prices!
+Al-Ghala Bot is online with exact prices!
+Al-Ghala Bot is online with exact prices!
+Al-Ghala Bot is online with exact prices!
+Al-Ghala Bot is online with exact prices!
+Al-Ghala Bot is online with exact prices!
+Al-Ghala Bot is online with device specs included!
+
+🔥 نظام محل الغلا متصل! مواصفات الأجهزة والزيادة تعمل بكفاءة.
+
+🔥 نظام محل الغلا متصل! مواصفات الأجهزة والزيادة تعمل بكفاءة.
+Closing session: SessionEntry {
+  _chains: {
+    'BTrzZynJYVbpA+bdpvlImY/PrJYr+1hAp8HaQpm/0Xhu': { chainKey: [Object], chainType: 1, messageKeys: {} }
+  },
+  registrationId: 687733457,
+  currentRatchet: {
+    ephemeralKeyPair: {
+      pubKey: <Buffer 05 3a f3 67 29 c9 61 56 e9 03 e6 dd a6 f9 48 99 8f cf ac 96 2b fb 58 40 a7 c1 da 42 99 bf d1 78 6e>,
+      privKey: <Buffer d8 d1 62 c4 e3 e1 17 f4 de 70 3f 37 05 16 73 18 89 d8 34 e7 f3 55 27 a8 fd dd af 08 ab f6 04 43>
+    },
+    lastRemoteEphemeralKey: <Buffer 05 70 7a d2 ea e3 0b 1f 5e 3b f7 fc a2 b9 36 f5 12 01 9b 04 00 96 8e 78 85 ec 4b 38 5e 0d b7 b3 28>,
+    previousCounter: 0,
+    rootKey: <Buffer 04 34 2d 3a 5f 63 5c 70 17 fc 14 f7 ac 4c 32 14 f3 a0 ed 9d f7 e9 99 f9 5f 1b 56 58 d2 ab ba 1b>
+  },
+  indexInfo: {
+    baseKey: <Buffer 05 f9 7f 8b 06 b6 57 61 06 04 b5 e8 cb 19 99 8c 23 50 91 2f 10 39 b6 03 5f 7e 56 9f 61 ee cb 0c 5c>,
+    baseKeyType: 1,
+    closed: -1,
+    used: 1788700695131,
+    created: 1788700695131,
+    remoteIdentityKey: <Buffer 05 85 53 67 16 b2 70 78 04 f3 12 06 10 91 da ea e5 5f cb 1b 66 7a f6 7e 8d 83 11 ab 9a a1 5d 77 51>
+  },
+  pendingPreKey: {
+    signedKeyId: 7699431,
+    baseKey: <Buffer 05 f9 7f 8b 06 b6 57 61 06 04 b5 e8 cb 19 99 8c 23 50 91 2f 10 39 b6 03 5f 7e 56 9f 61 ee cb 0c 5c>,
+    preKeyId: 5795216
+  }
+}
+Closing session: SessionEntry {
+  _chains: {
+    'Bcw5vcBZbDWt8uQk0NqIA4nE2ZfQqnVmYBQMsBB7WOx/': { chainKey: [Object], chainType: 1, messageKeys: {} }
+  },
+  registrationId: 687733457,
+  currentRatchet: {
+    ephemeralKeyPair: {
+      pubKey: <Buffer 05 cc 39 bd c0 59 6c 35 ad f2 e4 24 d0 da 88 03 89 c4 d9 97 d0 aa 75 66 60 14 0c b0 10 7b 58 ec 7f>,
+      privKey: <Buffer 60 0e ca 8c 2e a9 11 1e 89 33 01 36 ed ab 18 39 01 f0 8e 3f 86 8c 7a a4 13 94 70 eb 5e 1d 1c 71>
+    },
+    lastRemoteEphemeralKey: <Buffer 05 70 7a d2 ea e3 0b 1f 5e 3b f7 fc a2 b9 36 f5 12 01 9b 04 00 96 8e 78 85 ec 4b 38 5e 0d b7 b3 28>,
+    previousCounter: 0,
+    rootKey: <Buffer 9b eb ef b7 25 f2 47 08 40 7e 16 a4 c7 0e 90 4f e1 f3 50 5f d6 96 00 bc 13 a1 62 f4 36 4e 79 f0>
+  },
+  indexInfo: {
+    baseKey: <Buffer 05 c5 77 b9 64 dc 32 83 8d c1 29 1f 36 a4 b8 83 5e 9d 2c 4c 23 a5 2b ab cc bc de 29 03 d1 c7 ec 38>,
+    baseKeyType: 1,
+    closed: -1,
+    used: 1788701907607,
+    created: 1788701907607,
+    remoteIdentityKey: <Buffer 05 85 53 67 16 b2 70 78 04 f3 12 06 10 91 da ea e5 5f cb 1b 66 7a f6 7e 8d 83 11 ab 9a a1 5d 77 51>
+  },
+  pendingPreKey: {
+    signedKeyId: 7699431,
+    baseKey: <Buffer 05 c5 77 b9 64 dc 32 83 8d c1 29 1f 36 a4 b8 83 5e 9d 2c 4c 23 a5 2b ab cc bc de 29 03 d1 c7 ec 38>,
+    preKeyId: 5795336
+  }
+}
+Closing session: SessionEntry {
+  _chains: {
+    'BWpf5lwUvZOgy3x3Zhz7Fy/p/xwbs7MgJnzJ+zGWy0FC': { chainKey: [Object], chainType: 1, messageKeys: {} }
+  },
+  registrationId: 2095769558,
+  currentRatchet: {
+    ephemeralKeyPair: {
+      pubKey: <Buffer 05 6a 5f e6 5c 14 bd 93 a0 cb 7c 77 66 1c fb 17 2f e9 ff 1c 1b b3 b3 20 26 7c c9 fb 31 96 cb 41 42>,
+      privKey: <Buffer 80 50 0c 9b c1 94 f5 69 97 86 36 2c dd 0b a2 b1 24 03 6b 0c 1a c3 72 b0 16 f8 18 01 77 d7 2e 47>
+    },
+    lastRemoteEphemeralKey: <Buffer 05 55 9f ad 57 86 ce e7 64 26 d9 d8 ba 8a 32 28 ce b6 67 d4 70 5d 7e 11 2f d7 43 31 d1 b0 12 25 24>,
+    previousCounter: 0,
+    rootKey: <Buffer c3 7d b5 cf e3 c1 41 ff 2a d5 eb 0d 85 b1 5a af 12 af 8b 0c 2d 79 43 70 a9 7a 44 ce bf 44 8e 7e>
+  },
+  indexInfo: {
+    baseKey: <Buffer 05 21 47 65 29 a2 0c 9d 63 2c 32 18 ed 97 1c 85 54 c3 14 47 70 0e e3 e2 81 ff 65 85 14 84 d5 25 26>,
+    baseKeyType: 1,
+    closed: -1,
+    used: 1788700697124,
+    created: 1788700697124,
+    remoteIdentityKey: <Buffer 05 1a c1 86 0c e5 92 fb 45 b6 f7 c8 3b 7b 45 48 0b a0 06 b2 fc 89 34 1c 4d bc 02 fa 86 86 f4 63 06>
+  },
+  pendingPreKey: {
+    signedKeyId: 3428327,
+    baseKey: <Buffer 05 21 47 65 29 a2 0c 9d 63 2c 32 18 ed 97 1c 85 54 c3 14 47 70 0e e3 e2 81 ff 65 85 14 84 d5 25 26>,
+    preKeyId: 13237132
+  }
+}
+Closing session: SessionEntry {
+  _chains: {
+    'BeCSZOetiJowjt6an5kw7k4WgAUNcwPDQeDtcTTcS+ZK': { chainKey: [Object], chainType: 1, messageKeys: {} }
+  },
+  registrationId: 687733457,
+  currentRatchet: {
+    ephemeralKeyPair: {
+      pubKey: <Buffer 05 e0 92 64 e7 ad 88 9a 30 8e de 9a 9f 99 30 ee 4e 16 80 05 0d 73 03 c3 41 e0 ed 71 34 dc 4b e6 4a>,
+      privKey: <Buffer c0 f8 6c 2a cf 61 22 2c 9b 42 29 77 ed 05 5a d5 e2 04 d0 0d 3a 27 47 09 19 05 5b eb c7 91 6d 75>
+    },
+    lastRemoteEphemeralKey: <Buffer 05 70 7a d2 ea e3 0b 1f 5e 3b f7 fc a2 b9 36 f5 12 01 9b 04 00 96 8e 78 85 ec 4b 38 5e 0d b7 b3 28>,
+    previousCounter: 0,
+    rootKey: <Buffer 96 0b b4 18 30 26 fd a2 1c ab c5 d0 c7 d3 46 69 28 e8 f4 b2 ce 4b 84 20 62 e7 db 8f dd e7 86 54>
+  },
+  indexInfo: {
+    baseKey: <Buffer 05 1a 77 70 d8 04 ae 3e 03 1a 40 72 67 0a 00 b7 cc b7 b4 5b b2 c7 22 93 17 6e 8c 0a a4 d5 6c 82 00>,
+    baseKeyType: 1,
+    closed: -1,
+    used: 1788701926645,
+    created: 1788701926645,
+    remoteIdentityKey: <Buffer 05 85 53 67 16 b2 70 78 04 f3 12 06 10 91 da ea e5 5f cb 1b 66 7a f6 7e 8d 83 11 ab 9a a1 5d 77 51>
+  },
+  pendingPreKey: {
+    signedKeyId: 7699431,
+    baseKey: <Buffer 05 1a 77 70 d8 04 ae 3e 03 1a 40 72 67 0a 00 b7 cc b7 b4 5b b2 c7 22 93 17 6e 8c 0a a4 d5 6c 82 00>,
+    preKeyId: 5795022
+  }
+}
+
+🔥 نظام محل الغلا متصل! مواصفات الأجهزة والزيادة تعمل بكفاءة.

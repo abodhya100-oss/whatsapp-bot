@@ -1,0 +1,11 @@
+<style>
+    :root { --bg-navy: #0A1128; --card-white: #FFFFFF; --btn-blue: #2563EB; --btn-yellow-border: #FBBF24; --btn-green: #16A34A; --btn-red: #DC2626; --text-dark: #1E293B; --border-gray: #CBD5E1; }
+    body { background-color: var(--bg-navy) !important; color: var(--text-dark) !important; font-family: 'Tahoma', sans-serif !important; margin: 0 !important; padding: 15px 10px 80px 10px !important; }
+    .lux-wrapper, .ultra-wrapper { background-color: var(--card-white) !important; border-radius: 12px !important; padding: 15px !important; margin: 0 auto !important; max-width: 600px !important; box-shadow: 0 4px 10px rgba(0,0,0,0.3) !important; }
+    .lux-title, h2, h3, .section-title { background-color: var(--btn-blue) !important; color: #FFFFFF !important; border: none !important; border-bottom: 4px solid var(--btn-yellow-border) !important; border-radius: 8px !important; padding: 12px !important; text-align: center !important; font-size: 15px !important; font-weight: bold !important; margin-top: 0 !important; margin-bottom: 15px !important; }
+    .lux-btn, .pay-btn, button[type="submit"] { background-color: var(--btn-green) !important; color: #FFFFFF !important; border: none !important; border-radius: 8px !important; padding: 12px !important; font-size: 14px !important; font-weight: bold !important; width: 100% !important; cursor: pointer !important; }
+    .lux-input, input, select { background-color: #FFFFFF !important; color: var(--text-dark) !important; border: 1px solid var(--border-gray) !important; border-radius: 6px !important; padding: 10px !important; font-size: 12px !important; width: 100% !important; box-sizing: border-box !important; margin-bottom: 10px !important; }
+    .total-badge { background-color: var(--btn-red) !important; color: #FFFFFF !important; border-radius: 8px !important; padding: 12px !important; text-align: center !important; font-size: 18px !important; font-weight: bold !important; margin-bottom: 15px !important; }
+    .modal-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(10,17,40,0.9); z-index: 10000; justify-content: center; align-items: center; padding: 20px; }
+    .modal-box { background: var(--card-white); border-radius: 12px; padding: 20px; width: 100%; max-width: 350px; }
+</style>

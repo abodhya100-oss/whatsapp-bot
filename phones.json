@@ -1,0 +1,68 @@
+[
+  {
+    "model": "M10s",
+    "wholesale": 315,
+    "retail": 339,
+    "specs": "شاشة 6.5 بوصة - رام 4GB"
+  },
+  {
+    "model": "M15s",
+    "wholesale": 346,
+    "retail": 373,
+    "specs": "شاشة 6.56 بوصة - رام 6GB"
+  },
+  {
+    "model": "M20s",
+    "wholesale": 351,
+    "retail": 377,
+    "specs": "شاشة 6.6 بوصة - رام 6GB"
+  },
+  {
+    "model": "M15i",
+    "wholesale": 351,
+    "retail": 377,
+    "specs": "شاشة 6.56 بوصة - رام 4GB"
+  },
+  {
+    "model": "M25+",
+    "wholesale": 382,
+    "retail": 411,
+    "specs": "شاشة 6.7 بوصة - رام 8GB"
+  },
+  {
+    "model": "LT17",
+    "wholesale": 468,
+    "retail": 503,
+    "specs": "شاشة 6.67 بوصة - رام 12GB - بطارية 6000mAh"
+  },
+  {
+    "model": "M26+",
+    "wholesale": 482,
+    "retail": 518,
+    "specs": "شاشة 6.7 بوصة - رام 8GB"
+  },
+  {
+    "model": "M40+",
+    "wholesale": 514,
+    "retail": 552,
+    "specs": "شاشة 6.8 بوصة - رام 8GB"
+  },
+  {
+    "model": "M60+",
+    "wholesale": 680,
+    "retail": 731,
+    "specs": "شاشة 120Hz IPS - رام 16GB - تخزين 512GB - بطارية 6000mAh"
+  },
+  {
+    "model": "M45",
+    "wholesale": 550,
+    "retail": 592.1,
+    "specs": "شاشة 6.74 بوصة - رام 8GB"
+  },
+  {
+    "model": "LT20",
+    "wholesale": 500,
+    "retail": 550,
+    "specs": "شاشة 6.8 بوصة - رام 8GB - بطارية 5000"
+  }
+]

@@ -1,0 +1,85 @@
+---
+0.1 nokogiri:>= 0,rspec-steps:~> 0.1.1,uuid:>= 0|checksum:76436a15f932896857bcdb32b0acffeb45004432c3d117a3b7fde0c4fae56022,created_at:2013-12-10T13:49:11Z
+0.2 nokogiri:~> 1.6.0,rspec:~> 2.13.0,uuid:>= 0|checksum:1a5a689e272ee82c0ba4f83e0e042ccf10d62c6dd94edf76243c0d87f50d5faa,created_at:2013-12-12T09:41:53Z
+0.3 mimemagic:>= 0,nokogiri:~> 1.6.0,rspec:~> 2.13.0,uuid:>= 0|checksum:b72b3648d3cf1dd2a6862155d0fd47321b359718b57badba118bdddb6de59fc7,created_at:2014-07-10T14:18:02Z
+0.3.1 mimemagic:>= 0,nokogiri:~> 1.6.0,rspec:~> 2.13.0,uuid:>= 0|checksum:5d408a887edeba96a69dfc93291697518b562c66004e7709787e8e6f5c8ad39f,created_at:2014-07-11T14:51:01Z
+0.3.2 mimemagic:>= 0,nokogiri:~> 1.6.0,rspec:~> 2.14.0,uuid:>= 0|checksum:ec8543d215c9fe82f1c5bc4ec26b13d9a1148b5317214df172dbf88b5dc0c0bc,created_at:2014-07-17T08:30:49Z
+0.3.3 mimemagic:>= 0,nokogiri:~> 1.6.0,rspec:~> 2.14.0,uuid:>= 0|checksum:d9f2b756f8fdabd4d2a1dfb4970d57eee3e9f768f4236da586c6f30ae2675bf8,created_at:2014-07-18T11:43:32Z
+0.3.4 mimemagic:>= 0,nokogiri:~> 1.6.0,rspec:~> 2.14.0,uuid:>= 0|checksum:94f3a6ad08e09a74534fd7b09a033fef15f1a915b479497694ae74c2512b6a20,created_at:2014-07-21T14:55:59Z
+0.4.0 mimemagic:>= 0,nokogiri:~> 1.6.0,rspec:~> 2.14.0,uuid:>= 0|checksum:08ff607151f2927f8a68c04afb493ec195ba36f40b4b55e2e66f73c210c2366a,created_at:2014-07-24T15:41:17Z
+0.4.1 mimemagic:>= 0,nokogiri:~> 1.6.0,rspec:~> 2.14.0,uuid:>= 0|checksum:ce4097283eeb9ebd6d8ea515d282d30f451f2ee83556a941e09f00fc20d68be1,created_at:2014-07-24T15:57:27Z
+0.4.2 mimemagic:>= 0,nokogiri:~> 1.6.0,rspec:~> 2.14.0,uuid:>= 0|checksum:0794d969c00fd0b6742245fcf0727ed215ba6df5308aab6e342b61794ef09d33,created_at:2014-07-26T00:03:21Z
+0.5.0 rspec:~> 2.14.0|checksum:e3f301adcffa06ead11ce921b4e1717a409272fbe717374b93a0ac59946fb6cc,created_at:2014-08-01T23:39:09Z
+0.5.1 allure-ruby-api:= 0.6,rspec:~> 2.14.0|checksum:1320c474c0c270573b5acad1811c41df48ac06473d7561aa76540fde2a48d418,created_at:2014-08-01T23:41:23Z
+0.5.2 allure-ruby-adaptor-api:= 0.6.1,rspec:~> 2.14.0|checksum:ff6d9c364eac0abfdee315fccab91c1931b38fbd6902df63a66e4594fc6e7fae,created_at:2014-08-05T12:21:21Z
+0.5.3 allure-ruby-adaptor-api:= 0.6.2,rspec:~> 2.14.0|checksum:36cfbdd0a7eb13d07600f13e7173fdce9d989a1a27689c7147943f0727e8dbf6,created_at:2014-08-13T21:24:23Z
+0.6.1 allure-ruby-adaptor-api:= 0.6.3,rspec:= 3.0.0|checksum:bb3377e2b010c62bbfbe3eb170aaf9307e1f4e11776e31446004c8ee0233b234,created_at:2014-08-22T10:38:49Z
+0.6.2 allure-ruby-adaptor-api:= 0.6.3,rspec:= 3.0.0|checksum:ddeb0bc0c872228ced61619a5bc880bc425ab433deeb30f30be5e6ac80b71f70,created_at:2014-08-28T22:15:49Z
+0.6.3 allure-ruby-adaptor-api:= 0.6.3,rspec:= 3.0.0|checksum:f659a60a58778e36da7a6c7895256d971d333a542a4623a43e7e2ebfa5232bb6,created_at:2014-09-01T20:01:33Z
+0.6.4 allure-ruby-adaptor-api:= 0.6.3,rspec:= 3.0.0|checksum:e08748859c334c0d9265479345b1b9d9963eefd3a8d3abe35902324159bf29ec,created_at:2014-09-05T13:38:06Z
+0.6.5 allure-ruby-adaptor-api:= 0.6.3,rspec:~> 3.0|checksum:2a87b5fd16947793b68aae3fdbc098c0a7373a623f824c48329f8e17640dee98,created_at:2014-09-07T14:51:48Z
+0.6.6 allure-ruby-adaptor-api:= 0.6.3,rspec:~> 3.0|checksum:1c16dd8b8ecc8082537797639816f9161aa1bd4181fe2f54e4419789b154a1f8,created_at:2014-10-26T23:37:06Z
+0.6.7 allure-ruby-adaptor-api:= 0.6.4,rspec:~> 3.0|checksum:db8f23d4cc415025ed122187271e42cd74e41552338521c0f6158b4b75ed46a7,created_at:2014-10-30T10:01:21Z
+0.6.8 allure-ruby-adaptor-api:= 0.6.5,rspec:~> 3.0|checksum:bee68df43c45d2bf79ee7046c39f6e74a1cfd5a666621d4a2b784cd69ac5f68a,created_at:2015-01-19T08:23:46Z
+0.6.9 allure-ruby-adaptor-api:= 0.6.6,rspec:~> 3.2|checksum:60a3e3ee1152d1d6f046b732e6e5eea183d4aa2cbd5a2d2323272ce823e75182,created_at:2015-02-12T10:17:23Z
+0.5.4 allure-ruby-adaptor-api:= 0.6.6,rspec:~> 2.14.0|checksum:3b815b87ea7dfaa7ca6eec88689e18ec865ea5a6e4e0991d01fffc3be4f7475e,created_at:2015-04-08T12:37:29Z
+0.7.0 allure-ruby-adaptor-api:= 0.6.6,rspec:~> 3.2|checksum:e6847a66c119d18b7c7313a97619eddf73f2fbe058649222a765ac43abee8755,created_at:2015-05-13T14:13:54Z
+0.7.1 allure-ruby-adaptor-api:= 0.6.6,rspec:~> 3.2|checksum:1021ad4f7b5010b69d570e4b6fd6f97f5041f9103beee7efcfd3210592e4ee35,created_at:2015-06-17T23:09:08Z
+0.7.3 allure-ruby-adaptor-api:= 0.6.8,rspec:~> 3.2|checksum:fb986ed91a55be32616719acf94ab727e0aa641a1360d440f82c6e95040f704a,created_at:2015-11-01T16:33:14Z
+0.7.4 allure-ruby-adaptor-api:= 0.6.9,rspec:~> 3.2|checksum:98e868bf2b40dce3a2aa91989bf9a145e83487dedce53ae82999555be603995d,created_at:2015-11-05T11:27:31Z
+0.7.5 allure-ruby-adaptor-api:= 0.6.9,rspec:~> 3.2|checksum:96141aded20f934d200232e800c7cda2bb036620bd323d07fa9ed0884c533543,created_at:2015-11-09T22:22:30Z
+0.7.6 allure-ruby-adaptor-api:= 0.6.9,rspec:~> 3.2|checksum:8ef856d37b4284637d3af3d1f6fc2cb29f7365066d12493bf1221a68ac45139a,created_at:2016-02-02T14:24:40Z
+0.7.7 allure-ruby-adaptor-api:= 0.6.10,rspec:~> 3.2|checksum:75cc162f2994760bcfbcd5d5ad71e4e80d2f5886b69302526bd7cefde2f3ad21,created_at:2016-02-03T23:13:15Z
+0.8.0 allure-ruby-adaptor-api:= 0.7.0,rspec:~> 3.5|checksum:0838d5e6fc1e730a6a50f6501839739a391b19199aebc97a832324fe84be2f21,created_at:2016-12-28T23:43:29Z
+2.13.1 allure-ruby-commons:= 2.13.1,rspec-core:~> 3.8|checksum:567f55856a7fcfe21d499c42f0a748bad533d5b423b33f28b8313cc4a0624925,ruby:>= 2.5.0,created_at:2019-10-09T17:26:31Z
+2.13.2 allure-ruby-commons:= 2.13.2,rspec-core:~> 3.8|checksum:00182f02e6b0fd4038a7a929aaa34ede9a0f91909839904d276a17bcffa5deea,ruby:>= 2.5.0,created_at:2019-11-26T14:48:52Z
+2.13.3 allure-ruby-commons:= 2.13.3,rspec-core:~> 3.8|checksum:9b7d28e23264552382ea9b3cdb1437dc036243877be19d8b58f3262e15bea1b7,ruby:>= 2.5.0,created_at:2020-01-07T16:37:37Z
+2.13.4 allure-ruby-commons:= 2.13.4,rspec-core:~> 3.8,ruby2_keywords:~> 0.0.2|checksum:8b380583b89b27f42ac00bb1357081b987aa99da7a231ade9b2b6a9cd881cd0b,ruby:>= 2.5.0,created_at:2020-02-25T14:01:41Z
+2.13.5.rc.1 allure-ruby-commons:= 2.13.5.rc.1,rspec-core:~> 3.8,ruby2_keywords:~> 0.0.2|checksum:33c0c93584f0b214e9efe8398fed06115cdb0a009ddd0ef06e1697b6a1ab90e8,ruby:>= 2.5.0,rubygems:> 1.3.1,created_at:2020-03-28T19:53:45Z
+2.13.5.rc.2 allure-ruby-commons:= 2.13.5.rc.2,rspec-core:~> 3.8,ruby2_keywords:~> 0.0.2|checksum:9cf5be8e92be7879e622a2c9d4c41930bdec5bc2f793da6b689c3c1f5cb2e2c9,ruby:>= 2.5.0,rubygems:> 1.3.1,created_at:2020-03-29T12:41:37Z
+2.13.5.rc.3 allure-ruby-commons:= 2.13.5.rc.3,rspec-core:~> 3.8,ruby2_keywords:~> 0.0.2|checksum:84618d3fba9c815869972c920490560c1be9e6b3cb04b5eaa172f9cf6f9a0e4e,ruby:>= 2.5.0,rubygems:> 1.3.1,created_at:2020-05-04T10:20:33Z
+2.13.6 allure-ruby-commons:= 2.13.6,rspec-core:~> 3.8,ruby2_keywords:~> 0.0.2|checksum:e513c2f541d18a6d47a132d4ed279d8c4982b9d7582812cf4a009b6fe242773e,ruby:>= 2.5.0,created_at:2020-06-03T06:38:03Z
+2.13.6.1 allure-ruby-commons:= 2.13.6.1,rspec-core:~> 3.8,ruby2_keywords:~> 0.0.2|checksum:6bcc618fdd1a953b2eac3824eff99dff42cbfd5423bc4b406b82b4a53b8f2fff,ruby:>= 2.5.0,created_at:2020-06-27T07:03:06Z
+2.13.6.2 allure-ruby-commons:= 2.13.6.2,rspec-core:~> 3.8,ruby2_keywords:~> 0.0.2|checksum:ceeb0b37d5b2b97184ed5727e4d74508ab3e6bce33131cf5b24c9553eea48754,ruby:>= 2.5.0,created_at:2020-08-13T20:10:37Z
+2.13.6.3 allure-ruby-commons:= 2.13.6.3,rspec-core:~> 3.8,ruby2_keywords:~> 0.0.2|checksum:91099c932ae06f7c2106d50e0703298e431f4c200bb430a3b11657310263a570,ruby:>= 2.5.0,created_at:2020-08-17T17:31:43Z
+2.13.6.4 allure-ruby-commons:= 2.13.6.4,rspec-core:< 4&>= 3.8,ruby2_keywords:~> 0.0.2|checksum:b09dff100f9ce28c79d152b68c15a0a7e9cfd2d8747c52005672b3bd2fe5fb1e,ruby:>= 2.5.0,created_at:2020-10-27T20:46:54Z
+2.13.7 allure-ruby-commons:= 2.13.7,rspec-core:< 4&>= 3.8,ruby2_keywords:~> 0.0.2|checksum:a5c2b8b7e326e06f80396a46b4319daf7be2f1a5702c20bd9c00ec28fdd0c95f,ruby:>= 2.5.0,created_at:2020-11-26T16:46:02Z
+2.13.8 allure-ruby-commons:= 2.13.8,rspec-core:< 4&>= 3.8,ruby2_keywords:~> 0.0.2|checksum:5db04e5bdc80d64c1bce8de2c458e1e09eb2b25491ff996e101f8cabefd8cabf,ruby:>= 2.5.0,created_at:2020-12-17T21:06:58Z
+2.13.8.1 allure-ruby-commons:= 2.13.8.1,rspec-core:< 4&>= 3.8,ruby2_keywords:~> 0.0.2|checksum:2a3787ab78683d04a89174a78cc25b809b34a21f69dc10d4444183b9605af4e2,ruby:>= 2.5.0,created_at:2021-02-14T15:40:55Z
+2.13.8.2 allure-ruby-commons:= 2.13.8.2,rspec-core:< 4&>= 3.8,ruby2_keywords:~> 0.0.2|checksum:54b09487ff6b89f41d26ecd3a1f4ff74b4fb02ca97a8128cf4884f2240e4e7fb,ruby:>= 2.5.0,created_at:2021-02-16T19:48:25Z
+2.13.8.3 allure-ruby-commons:= 2.13.8.3,rspec-core:< 4&>= 3.8,ruby2_keywords:~> 0.0.2|checksum:ad1ef21c9e76baff74926adc4eb656570ed5e2e8c99ae2c73ab5e69f54309c68,ruby:>= 2.5.0,created_at:2021-02-19T10:36:16Z
+2.13.8.4 allure-ruby-commons:= 2.13.8.4,rspec-core:< 4&>= 3.8,ruby2_keywords:~> 0.0.2|checksum:cb4eb4bbc5ddf78097bbbca6efcbbf2dd2abd071bbcc1b9bf66698c498577112,ruby:>= 2.5.0,created_at:2021-02-27T09:07:36Z
+2.13.8.5 allure-ruby-commons:= 2.13.8.5,rspec-core:< 4&>= 3.8,ruby2_keywords:~> 0.0.2|checksum:3f34cf37961cb21a0a3b501da7f2d575b75e3aebbc311135efb32d5aca2241f7,ruby:>= 2.5.0,created_at:2021-03-14T17:23:31Z
+2.13.9 allure-ruby-commons:= 2.13.9,rspec-core:< 4&>= 3.8,ruby2_keywords:~> 0.0.2|checksum:75cee20fac24c02feefeb077d784170b5f7e5e5d6c4608ad1e247570671c81e0,ruby:>= 2.5.0,created_at:2021-04-15T07:39:56Z
+2.13.10 allure-ruby-commons:= 2.13.10,rspec-core:< 4&>= 3.8|checksum:c65a671fe773835efe153ef06732776b6785ce6866901956fcf2f4b5f35a202a,ruby:>= 2.5.0,created_at:2021-05-18T19:17:28Z
+2.14.0 allure-ruby-commons:= 2.14.0,rspec-core:< 4&>= 3.8|checksum:be486f844274305c93b19bb8715d47b66500b40da15f1f167ca5a81062d8f278,ruby:>= 2.5.0,created_at:2021-05-25T22:10:08Z
+2.14.1 allure-ruby-commons:= 2.14.1,rspec-core:< 4&>= 3.8|checksum:d037327c2537e94eb79b8306de09a00f7910989fe7706139b0868d878156ec91,ruby:>= 2.5.0,created_at:2021-06-10T19:22:28Z
+2.14.2 allure-ruby-commons:= 2.14.2,rspec-core:< 4&>= 3.8|checksum:6c3bb11a5608f89f431cb2cb0dd046e15de86dbcd3f9b838ebf732a0b340471d,ruby:>= 2.5.0,created_at:2021-07-14T21:01:38Z
+2.14.3 allure-ruby-commons:= 2.14.3,rspec-core:< 4&>= 3.8|checksum:9c654210c7b054de249f7bb9d240f5b008b00e3261ea5912bfcd7f42b20f8567,ruby:>= 2.5.0,created_at:2021-07-24T08:05:19Z
+2.14.4 allure-ruby-commons:= 2.14.4,rspec-core:< 4&>= 3.8|checksum:676f2986d92612191caa65e2d3d22ba0babdae60dfc1ef95436c43476c5b8943,ruby:>= 2.5.0,created_at:2021-08-18T09:23:28Z
+2.14.5 allure-ruby-commons:= 2.14.5,rspec-core:< 4&>= 3.8|checksum:bff77a9673f4ed563c7fcc0a40c301d10528ff906cd290c74e7414be1b850f00,ruby:>= 2.5.0,created_at:2021-08-18T18:50:58Z
+2.15.0 allure-ruby-commons:= 2.15.0,rspec-core:< 4&>= 3.8|checksum:ab2871df99fe324d16a8f41fba6101832f932e6529df10b3fa32b6affbf1165e,ruby:>= 2.5.0,created_at:2021-10-04T12:03:41Z
+2.16.0 allure-ruby-commons:= 2.16.0,rspec-core:< 4&>= 3.8|checksum:b505e9ac76d5265ae0899c070e8d466088b625f02d3b5b8beffe8adabd753ea6,ruby:>= 2.5.0,created_at:2022-01-22T17:44:22Z
+2.16.1 allure-ruby-commons:= 2.16.1,rspec-core:< 4&>= 3.8|checksum:e1bdd41bc1f022eb1d1ae0b41ec496d72e37cc5b61bfdce17fa4a49bb9798236,ruby:>= 2.5.0,created_at:2022-02-02T22:51:13Z
+2.16.2 allure-ruby-commons:= 2.16.2,rspec-core:< 4&>= 3.8|checksum:88ce038b90797e0a34df635c78e959b1fa1b9f496d0bb510e5f909f6fa3d8392,ruby:>= 2.5.0,created_at:2022-03-08T22:21:17Z
+2.17.0 allure-ruby-commons:= 2.17.0,rspec-core:< 4&>= 3.8|checksum:5808ce1155b82ba9197f7753c57b19fef6fbf3349d15c381279f164f4f714222,ruby:>= 2.5.0,created_at:2022-04-04T19:26:17Z
+2.18.0 allure-ruby-commons:= 2.18.0,rspec-core:< 4&>= 3.8|checksum:73481d8515bce601901953fcc38dbeac93ac700b3dedbae127691fc24278b5eb,ruby:>= 2.7.0,created_at:2022-05-23T14:23:14Z
+2.19.0 allure-ruby-commons:= 2.19.0,rspec-core:< 4&>= 3.8|checksum:0d2c1a22ef0d0b0a13eeec6dfc71e2a0833ad92e28b30751cb496b7c20d3badd,ruby:>= 2.7.0,created_at:2022-11-08T16:26:35Z
+2.20.0 allure-ruby-commons:= 2.20.0,rspec-core:< 4&>= 3.8|checksum:da09dfd6eb9b4174eef451da6ea4f4ba305c618d2843374558ee1043eecfc2c9,ruby:>= 2.7.0,created_at:2022-11-28T22:43:11Z
+2.21.0 allure-ruby-commons:= 2.21.0,rspec-core:< 4&>= 3.8|checksum:64b2b73daad9dfdcce6adbaa17191a3844ca9d365dddb28231e3ca511b4e157a,ruby:>= 2.7.0,created_at:2023-05-27T21:38:42Z
+2.21.1 allure-ruby-commons:= 2.21.1,rspec-core:< 4&>= 3.8|checksum:6e302c4979e8efb28653ddc1500e49b5a28256bdfe1dcf93284481ecfcc93699,ruby:>= 2.7.0,created_at:2023-05-29T07:23:25Z
+2.21.2 allure-ruby-commons:= 2.21.2,rspec-core:< 4&>= 3.8|checksum:4d9033bdb370e2de36a24d1226687c488e6d210184511a65745ba53bf82cded3,ruby:>= 2.7.0,created_at:2023-05-31T06:21:00Z
+2.22.0 allure-ruby-commons:= 2.22.0,rspec-core:< 4&>= 3.8|checksum:a8719a0d2a2d29a297c5320bcf6511465dade784ec777ca8299a6346fdf84ce0,ruby:>= 3.0.0,created_at:2023-06-27T17:38:44Z
+2.23.0 allure-ruby-commons:= 2.23.0,rspec-core:< 4&>= 3.8|checksum:a1cb3313f41a4b2ac777869c31c115623099e41a39de2f2b8f5e2ee677aed29e,ruby:>= 3.0.0,created_at:2023-09-06T14:19:57Z
+2.24.0 allure-ruby-commons:= 2.24.0,rspec-core:< 4&>= 3.8|checksum:48e6619298232f21d5db6f89ea14546a6e7d9bd15578fcc11048f61c3a93f006,ruby:>= 3.0.0,created_at:2024-02-17T17:29:18Z
+2.24.1 allure-ruby-commons:= 2.24.1,rspec-core:< 4&>= 3.8|checksum:f3f46c8b3670ab6054bf6591b3a5768706d4f0a113b567fce927f3dc35fa52bd,ruby:>= 3.0.0,created_at:2024-02-26T14:15:57Z
+2.24.2 allure-ruby-commons:= 2.24.2,rspec-core:< 4&>= 3.8|checksum:884e80f64390192ce9a93e9382f1193cf1cecc8c2199c91830e32ba9107d9836,ruby:>= 3.0.0,created_at:2024-03-18T17:37:41Z
+2.24.3 allure-ruby-commons:= 2.24.3,rspec-core:< 4&>= 3.8|checksum:a6219d6c3fbfa7c44ad2d9db5796ec238a33f5f65d27a0ffbe3c955e5a1931a2,ruby:>= 3.0.0,created_at:2024-04-16T10:35:17Z
+2.24.4 allure-ruby-commons:= 2.24.4,rspec-core:< 4&>= 3.8|checksum:ed1d06226ca13d36c16ff899591fd5cca78a962e06b8921c721494508ab83577,ruby:>= 3.0.0,created_at:2024-04-19T13:49:35Z
+2.24.5 allure-ruby-commons:= 2.24.5,rspec-core:< 4&>= 3.8|checksum:0ffbb95402a72d7c4d29b764cb32567f8169e33dc658f1e8ed2ee4a4ca1f4c7b,ruby:>= 3.0.0,created_at:2024-05-06T17:53:03Z
+2.25.0 allure-ruby-commons:= 2.25.0,rspec-core:< 4&>= 3.8|checksum:040fab14781ddb319737ee66e871e9bbc5064708cb3a2cca4daf1863714737a3,ruby:>= 3.1,created_at:2024-08-21T17:30:23Z
+2.26.0 allure-ruby-commons:= 2.26.0,rspec-core:< 4&>= 3.8|checksum:249b81f61506bfc19017d2300d2b8c17b8c86d7a10503057e187d3e69a3aee7d,ruby:>= 3.1,created_at:2025-03-10T23:27:17Z
+2.27.0 allure-ruby-commons:= 2.27.0,rspec-core:< 4&>= 3.8|checksum:90530ea173eec47f5b473f10cdc8b7f7dcdc410a716b2c923bbb9b9a7bb4c7a2,ruby:>= 3.1,created_at:2025-05-20T13:43:15Z
+2.28.0 allure-ruby-commons:= 2.28.0,rspec-core:< 4&>= 3.8|checksum:a5c925396a5c26dd056f25c35225831dfad144f16333e2ca5dfd2f40e7db4bbb,ruby:>= 3.1,created_at:2025-12-22T09:35:04Z
+2.29.0 allure-ruby-commons:= 2.29.0,rspec-core:< 4&>= 3.8|checksum:79a8bd28cf5f13051bca209d5809f1e3d1794b9a59216b2b6d3e1703df5d37c0,ruby:>= 3.1,created_at:2026-04-08T18:54:54Z
+2.29.1 allure-ruby-commons:= 2.29.1,rspec-core:< 4&>= 3.8|checksum:e6751f92ee8098bceaf295ed11dc2faaa5be60e209c17a07d07c21dfabbd4135,ruby:>= 3.1,created_at:2026-04-15T06:06:18Z

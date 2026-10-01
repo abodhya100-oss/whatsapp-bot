@@ -1,0 +1,10 @@
+---
+0.0.1 |checksum:d4873e38b2a7c8bbc6a5f3a4ebe7160decf85ef8214fe0f1a3f18149aa00f9ed,ruby:>= 2.0.0,created_at:2014-04-01T10:31:42Z
+1.0.0 |checksum:d0a61970d697b9bc6aef2e63b6737e0b575e5233aea948fcc03b70c29c140ba1,ruby:>= 2.0.0,created_at:2014-04-01T17:15:50Z
+1.1.0 |checksum:3d191b25b79a48897874f03c1f9b52f359bea3eca1ab229b5d928dc56da6eb6c,ruby:>= 2.0.0,created_at:2014-04-01T21:08:41Z
+1.1.1 |checksum:89e08c164b23315cbc69fa80a966ce6db7c400c65fb82f347bee58e52506df53,ruby:>= 2.0.0,created_at:2014-04-03T10:18:15Z
+1.2.0 |checksum:e4906decb6a356a613f854c7371231a24d186776d86361803fa39dbaab95d2e1,ruby:>= 2.0.0,created_at:2015-09-28T17:15:34Z
+1.2.1 |checksum:2cc989e04018e43fcda72c4c81d75f5b803ecc77b541cb811392c00f76a705a2,ruby:>= 2.0.0,created_at:2015-09-28T18:23:55Z
+1.2.2 |checksum:e0f2571e0d8e8b0701db1d5df721e8f8d4e2df9eec32548b16cacb53ccecbc3f,ruby:>= 2.0.0,created_at:2019-01-08T18:54:53Z
+1.2.3 |checksum:23e69de01aabd80192c7619ed9870b7c06a4c1bf82e98e130e4c3ac6d12819d7,ruby:>= 2.0.0,created_at:2022-07-29T16:43:24Z
+1.3.0 openssl:~> 3.0|checksum:be01742f6cdf479770fae025880fe034f9125fb9c52cfab22ddc8aeb7673a7a7,ruby:>= 2.0.0,created_at:2025-11-26T10:28:05Z

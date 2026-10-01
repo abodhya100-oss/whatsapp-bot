@@ -1,0 +1,14 @@
+help
+search type:auxiliary scanner portscan
+use 5
+show options
+back
+use auxiliary/scanner/discovery/arp_sweep
+show options
+set RHOSTS 192.168.1.0/24
+run
+back
+use auxiliary/scanner/discovery/ping_sweep
+set RHOSTS 192.168.1.0/24
+run
+exit

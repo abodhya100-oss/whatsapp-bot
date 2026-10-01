@@ -1,0 +1,13 @@
+---
+0.6.1 mimemagic:>= 0,nokogiri:~> 1.6.0,rspec:~> 2.14.0,uuid:>= 0|checksum:d712497fbbea244993f2c33f57cc91751a7480acea557999c2ceb010351476b8,created_at:2014-08-05T12:14:36Z
+0.6.2 mimemagic:>= 0,nokogiri:~> 1.6.0,rspec:~> 2.14.0,uuid:>= 0|checksum:a31651ec6e08b4cd2581843fefcb1959d45448c0b9dc6160081e23dd7678e6a3,created_at:2014-08-13T21:22:18Z
+0.6.3 mimemagic:>= 0,nokogiri:~> 1.6.0,uuid:>= 0|checksum:9383fa923fa956144d9b971e82ed96fca7d13d3bec6c4a75e43d24b38253f0a1,created_at:2014-08-20T20:35:54Z
+0.6.4 mimemagic:>= 0,nokogiri:~> 1.6.0,uuid:>= 0|checksum:9e0f929842c497392043b17cde63b9ffba5e05a5fe4a3300af34f3c5da1bd608,created_at:2014-10-30T09:31:58Z
+0.6.5 mimemagic:>= 0,nokogiri:~> 1.6.0,uuid:>= 0|checksum:15ba612796d9a0ad0b955ea6cb46a0b4cfecbd62fb8876d2c8fac4d885fa3002,created_at:2015-01-19T08:23:23Z
+0.6.6 mimemagic:>= 0,nokogiri:~> 1.6.0,uuid:>= 0|checksum:8b9e067caef7b4a2bf93b5cecab40ae8b6636dbcf75833b2a85cb9487d0e6d0e,created_at:2015-02-12T10:09:43Z
+0.6.8 mimemagic:>= 0,nokogiri:~> 1.6.0,uuid:>= 0|checksum:2957373a22a60e4c2efedc0f4aa408bca9c910691f767b39758fd6be06690229,created_at:2015-11-01T16:09:56Z
+0.6.9 mimemagic:>= 0,nokogiri:~> 1.6.0,uuid:>= 0|checksum:0170556df8be72aad8e51c9beae8f9fff381c12b4e8d2a4726de10e22ed9775a,created_at:2015-11-05T11:17:27Z
+0.6.10 mimemagic:>= 0,nokogiri:~> 1.6.0,uuid:>= 0|checksum:1f448653d9960a6b2546427cb9f79fe643e7592286bbf56dc8791807d185ba38,created_at:2016-02-02T20:43:48Z
+0.7.0 mimemagic:>= 0,nokogiri:~> 1.7,uuid:>= 0|checksum:34bfccce0b54990934924c92fa2ff123e2400b66d15feb24339553db85e32e3c,created_at:2016-12-28T23:06:05Z
+0.7.1 mimemagic:>= 0,nokogiri:~> 1.7,uuid:>= 0|checksum:d9bb254df5329f44923e642d72ce1ee35e8fead3e7c171b2c996367dc761dadb,created_at:2018-03-20T11:25:47Z
+0.7.2 mimemagic:>= 0,nokogiri:~> 1.7,uuid:>= 0|checksum:d4b033162c097c8a05953b502249abf780a31bd192538abf3e82a1d535f5b10e,created_at:2018-07-27T04:40:49Z

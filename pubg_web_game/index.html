@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PUBG Mobile TPP - منظور الشخص الثالث</title>
+    <style>
+        body {
+            margin: 0;
+            background: #0c0c0c;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            color: #fff;
+            font-family: sans-serif;
+            overflow: hidden;
+        }
+        canvas {
+            background: #22252a;
+            border: 3px solid #444;
+            touch-action: none;
+            box-shadow: 0 0 25px rgba(0,0,0,0.9);
+        }
+        .hud-top {
+            position: absolute;
+            top: 8px;
+            width: 360px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            z-index: 5;
+        }
+        .compass-bar {
+            background: rgba(0, 0, 0, 0.75);
+            color: #fff;
+            font-size: 11px;
+            font-weight: bold;
+            padding: 2px 10px;
+            border-radius: 3px;
+            letter-spacing: 2px;
+            border: 1px solid #555;
+        }
+        .zone-warning {
+            background: rgba(192, 57, 43, 0.9);
+            color: #fff;
+            font-size: 10px;
+            font-weight: bold;
+            padding: 2px 15px;
+            margin-top: 3px;
+            border-radius: 2px;
+        }
+        .controls {
+            margin-top: 6px;
+            display: grid;
+            grid-template-columns: repeat(3, 60px);
+            gap: 4px;
+        }
+        button {
+            height: 34px;
+            background: rgba(30, 30, 30, 0.8);
+            color: white;
+            border: 1px solid #666;
+            font-size: 11px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .reload-btn { background: #e67e22; grid-column: span 3; }
+        .shoot-btn { background: #e74c3c; grid-column: span 3; font-size: 13px; }
+        
+        .menu-screen, .gameover-screen, .win-screen {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: rgba(15, 15, 15, 0.95);
+            width: 360px;
+            height: 360px;
+            z-index: 10;
+        }
+        .btn-main {
+            padding: 12px 25px;
+            background: #2ed573;
+            color: white;
+            border: none;
+            font-size: 18px;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="hud-top">
+        <div class="compass-bar">SE  150  165  S  195  10  SW</div>
+        <div class="zone-warning">⚠️ Restricting the Playzone in 10s!</div>
+    </div>
+
+    <div style="position: relative;">
+        <!-- القائمة الرئيسية -->
+        <div id="menuScreen" class="menu-screen">
+            <h2 style="color: #ff4757; margin-bottom: 5px;">PUBG Mobile TPP</h2>
+            <p style="color: #aaa; font-size: 13px; margin-bottom: 15px;">الرقم القياسي: <span id="highScoreDisplay">0</span></p>
+            <button class="btn-main" onclick="startMatch()">دخول الجيم (Start TPP) 🎮</button>
+        </div>
+
+        <!-- شاشة الفوز -->
+        <div id="winScreen" class="win-screen" style="display: none;">
+            <h2 style="color: #2ed573; margin-bottom: 5px;">Chicken Dinner! 🍗</h2>
+            <p style="font-size: 15px; margin: 5px;">القتلى: <span id="winKills">0</span></p>
+            <button class="btn-main" onclick="startMatch()">لعبة جديدة 🔄</button>
+        </div>
+
+        <!-- شاشة الخسارة -->
+        <div id="gameOverScreen" class="gameover-screen" style="display: none;">
+            <h2 style="color: #ff4757; margin-bottom: 5px;">Eliminated 💀</h2>
+            <button class="btn-main" onclick="startMatch()">العودة للوبي 🔄</button>
+        </div>
+
+        <canvas id="gameCanvas" width="360" height="360"></canvas>
+    </div>
+    
+    <div class="controls">
+        <div></div>
+        <button onclick="movePlayer(0, -player.speed)">⬆️ تقدم</button>
+        <div></div>
+        <button onclick="movePlayer(-player.speed, 0)">⬅️ يسار</button>
+        <button onclick="movePlayer(0, player.speed)">⬇️ تراجع</button>
+        <button onclick="movePlayer(player.speed, 0)">➡️ يمين</button>
+        <button class="shoot-btn" onclick="playerShoot()">إطلاق النار (Fire) 🔫</button>
+        <button class="reload-btn" onclick="reloadAmmo()">تلقيم السلاح (Reload) 🔄</button>
+    </div>
+
+    <script>
+        const canvas = document.getElementById("gameCanvas");
+        const ctx = canvas.getContext("2d");
+
+        const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+        let soundEnabled = true;
+
+        function playSound(type) {
+            if (!soundEnabled) return;
+            if (audioCtx.state === 'suspended') audioCtx.resume();
+            const osc = audioCtx.createOscillator();
+            const gain = audioCtx.createGain();
+            osc.connect(gain);
+            gain.connect(audioCtx.destination);
+            let now = audioCtx.currentTime;
+
+            if (type === 'shoot') {
+                osc.type = 'sawtooth';
+                osc.frequency.setValueAtTime(450, now);
+                osc.frequency.exponentialRampToValueAtTime(70, now + 0.1);
+                gain.gain.setValueAtTime(0.2, now);
+                gain.gain.linearRampToValueAtTime(0.01, now + 0.1);
+                osc.start(now); osc.stop(now + 0.1);
+            } else if (type === 'hit') {
+                osc.type = 'square';
+                osc.frequency.setValueAtTime(150, now);
+                osc.frequency.exponentialRampToValueAtTime(40, now + 0.15);
+                gain.gain.setValueAtTime(0.2, now);
+                gain.gain.linearRampToValueAtTime(0.01, now + 0.15);
+                osc.start(now); osc.stop(now + 0.15);
+            }
+        }
+
+        const WORLD_SIZE = 1400;
+        let player, bots, bullets, enemyBullets, houses, camera, killFeed;
+        let gameState = 'MENU';
+        let highScore = localStorage.getItem('pubg_tpp_highscore') || 0;
+        document.getElementById('highScoreDisplay').innerText = highScore;
+
+        function addKillFeed(msg) {
+            killFeed.unshift(msg);
+            if (killFeed.length > 3) killFeed.pop();
+        }
+
+        function startMatch() {
+            document.getElementById('menuScreen').style.display = 'none';
+            document.getElementById('gameOverScreen').style.display = 'none';
+            document.getElementById('winScreen').style.display = 'none';
+
+            player = {
+                x: 700, y: 900, size: 28, color: "#2c3e50",
+                speed: 4.5, health: 100, maxHealth: 100,
+                armor: 150, ammo: 30, maxAmmo: 30, kills: 0,
+                dirX: 0, dirY: -1, weaponType: 'M416'
+            };
+
+            camera = { x: 0, y: 0 };
+            killFeed = ["بداية المعركة - منظور الشخص الثالث TPP 🪂"];
+
+            // مباني وبيوت مع نوافذ وغرف مشابهة للصورة
+            houses = [
+                { x: 500, y: 400, w: 200, h: 160, color: "#a93226" }, // بيت أحمر كبير
+                { x: 300, y: 700, w: 140, h: 120, color: "#7f8c8d" }
+            ];
+
+            bots = [
+                { x: 600, y: 480, size: 24, color: "#e74c3c", health: 1, shootTimer: 0 } // عدو داخل البيت قرب النافذة
+            ];
+
+            bullets = [];
+            enemyBullets = [];
+
+            gameState = 'PLAYING';
+        }
+
+        function updateGame() {
+            if (gameState !== 'PLAYING') return;
+
+            // الكاميرا تتبع اللاعب من الخلف (TPP Over-the-shoulder)
+            camera.x = player.x - canvas.width / 2;
+            camera.y = player.y - canvas.height / 2 + 50; // اللاعب يظهر في النصف السفلي من الشاشة وينظر للأعلى نحو الغرف
+
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            ctx.save();
+            ctx.translate(-camera.x, -camera.y);
+
+            // أرضية الماب الخارجية
+            ctx.fillStyle = "#384244";
+            ctx.fillRect(0, 0, WORLD_SIZE, WORLD_SIZE);
+
+            // رسم المباني والبيوت (مع نوافذ وغرف)
+            for (let h of houses) {
+                ctx.fillStyle = h.color;
+                ctx.fillRect(h.x, h.y, h.w, h.h);
+                ctx.strokeStyle = "#111";
+                ctx.lineWidth = 3;
+                ctx.strokeRect(h.x, h.y, h.w, h.h);
+
+                // رسم نافذة المنزل (تظهر ما بداخل الغرفة مثل الصورة)
+                ctx.fillStyle = "#111";
+                ctx.fillRect(h.x + 40, h.y + h.h - 8, 60, 10); // فتحة نافذة سفلية
+                ctx.fillRect(h.x + 40, h.y, 60, 10); // نافذة علوية
+            }
+
+            // حركة ورسم الأعداء داخل البيوت
+            for (let i = bots.length - 1; i >= 0; i--) {
+                let b = bots[i];
+                b.shootTimer++;
+                if (b.shootTimer > 100) {
+                    b.shootTimer = 0;
+                    let angle = Math.atan2((player.y) - (b.y), (player.x) - (b.x));
+                    enemyBullets.push({ x: b.x, y: b.y, vx: Math.cos(angle) * 5, vy: Math.sin(angle) * 5 });
+                }
+
+                // رسم العدو بداخل الغرفة
+                ctx.fillStyle = b.color;
+                ctx.fillRect(b.x, b.y, b.size, b.size);
+                // خوذة العدو السوداء
+                ctx.fillStyle = "#000";
+                ctx.fillRect(b.x + 4, b.y + 2, b.size - 8, 8);
+            }
+
+            // رسم شخصية اللاعب من الخلف (TPP Character Model)
+            // الحقيبة والظهر
+            ctx.fillStyle = "#1b2631";
+            ctx.fillRect(player.x - 4, player.y + 8, player.size + 8, player.size - 6);
+            // الخوذة والرأس من الخلف
+            ctx.fillStyle = "#34495e";
+            ctx.beginPath();
+            ctx.arc(player.x + player.size/2, player.y + 8, 12, 0, Math.PI * 2);
+            ctx.fill();
+            ctx.closePath();
+            // سلاح الـ M416 بارز من الكتف
+            ctx.fillStyle = "#000";
+            ctx.fillRect(player.x + player.size, player.y + 4, 4, 22);
+
+            // رصاصات اللاعب
+            ctx.fillStyle = "#f1c40f";
+            for (let i = bullets.length - 1; i >= 0; i--) {
+                bullets[i].x += bullets[i].vx;
+                bullets[i].y += bullets[i].vy;
+                ctx.fillRect(bullets[i].x, bullets[i].y, 6, 6);
+
+                let remove = false;
+                for (let j = bots.length - 1; j >= 0; j--) {
+                    let b = bots[j];
+                    if (bullets[i].x > b.x && bullets[i].x < b.x + b.size && bullets[i].y > b.y && bullets[i].y < b.y + b.size) {
+                        remove = true;
+                        bots.splice(j, 1);
+                        player.kills++;
+                        playSound('hit');
+                        addKillFeed("تم إقصاء العدو بنجاح! 🎯");
+                        triggerWin();
+                        break;
+                    }
+                }
+                if (remove || bullets[i].x < 0 || bullets[i].x > WORLD_SIZE || bullets[i].y < 0 || bullets[i].y > WORLD_SIZE) {
+                    bullets.splice(i, 1);
+                }
+            }
+
+            // رصاصات الأعداء
+            ctx.fillStyle = "#ff4757";
+            for (let i = enemyBullets.length - 1; i >= 0; i--) {
+                enemyBullets[i].x += enemyBullets[i].vx;
+                enemyBullets[i].y += enemyBullets[i].vy;
+                ctx.fillRect(enemyBullets[i].x, enemyBullets[i].y, 5, 5);
+
+                if (enemyBullets[i].x > player.x && enemyBullets[i].x < player.x + player.size &&
+                    enemyBullets[i].y > player.y && enemyBullets[i].y < player.y + player.size) {
+                    player.health -= 20;
+                    playSound('hit');
+                    if (player.health <= 0) triggerGameOver();
+                    enemyBullets.splice(i, 1);
+                }
+            }
+
+            ctx.restore();
+
+            // رسم واجهة PUBG TPP السفلية اليمنى (خانات الأسلحة وخريطة مصغرة)
+            drawPUBGUI();
+            drawKillFeedHud();
+        }
+
+        function drawPUBGUI() {
+            let w = canvas.width;
+            let h = canvas.height;
+
+            // صندوق الأسلحة أسفل اليمين مطابِق للصورة
+            ctx.fillStyle = "rgba(0, 0, 0, 0.6)";
+            ctx.fillRect(w - 110, h - 75, 100, 65);
+            ctx.strokeStyle = "#444";
+            ctx.strokeRect(w - 110, h - 75, 100, 65);
+
+            ctx.fillStyle = "#2ed573";
+            ctx.font = "bold 10px sans-serif";
+            ctx.fillText("Auto", w - 40, h - 63);
+            ctx.fillStyle = "#fff";
+            ctx.fillText("M416", w - 100, h - 45);
+            ctx.fillText(`${player.ammo}/30`, w - 100, h - 25);
+
+            // عداد الصحة أسفل اليسار
+            ctx.fillStyle = "rgba(0, 0, 0, 0.6)";
+            ctx.fillRect(10, h - 40, 130, 30);
+            ctx.fillStyle = "#2ed573";
+            ctx.fillRect(12, h - 38, player.health * 1.25, 8); // شريط الصحة الأخضر
+            ctx.fillStyle = "#fff";
+            ctx.font = "10px sans-serif";
+            ctx.fillText(`Health: ${Math.max(0, player.health)}%`, 18, h - 18);
+        }
+
+        function drawKillFeedHud() {
+            ctx.fillStyle = "rgba(0, 0, 0, 0.6)";
+            ctx.fillRect(5, 38, 175, 40);
+            ctx.fillStyle = "#00d2d3";
+            ctx.font = "9px sans-serif";
+            for (let k = 0; k < killFeed.length; k++) {
+                ctx.fillText(killFeed[k], 10, 50 + (k * 12));
+            }
+        }
+
+        function triggerGameOver() {
+            gameState = 'GAMEOVER';
+            playSound('hit');
+            document.getElementById('gameOverScreen').style.display = 'flex';
+        }
+
+        function triggerWin() {
+            gameState = 'WIN';
+            playSound('shoot');
+            document.getElementById('winKills').innerText = player.kills;
+            document.getElementById('winScreen').style.display = 'flex';
+        }
+
+        function movePlayer(dx, dy) {
+            if (gameState !== 'PLAYING') return;
+
+            player.dirX = dx > 0 ? 1 : (dx < 0 ? -1 : 0);
+            player.dirY = dy > 0 ? 1 : (dy < 0 ? -1 : 0);
+
+            let newX = player.x + dx;
+            let newY = player.y + dy;
+
+            if (newX >= 0 && newX <= WORLD_SIZE - player.size && newY >= 0 && newY <= WORLD_SIZE - player.size) {
+                player.x = newX;
+                player.y = newY;
+            }
+        }
+
+        function playerShoot() {
+            if (gameState !== 'PLAYING' || player.ammo <= 0) return;
+            player.ammo--;
+            playSound('shoot');
+
+            let angle = Math.atan2(player.dirY, player.dirX);
+            if (player.dirX === 0 && player.dirY === 0) angle = -Math.PI/2; // للأعلى افتراضياً نحو الغرفة
+
+            bullets.push({
+                x: player.x + player.size/2,
+                y: player.y,
+                vx: Math.cos(angle) * 16,
+                vy: Math.sin(angle) * 16
+            });
+        }
+
+        function reloadAmmo() {
+            player.ammo = player.maxAmmo;
+        }
+
+        setInterval(updateGame, 30);
+    </script>
+</body>
+</html>

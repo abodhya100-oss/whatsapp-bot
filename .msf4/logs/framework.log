@@ -1,0 +1,5 @@
+[09/09/2026 16:16:44] [e(0)] core: Failed to connect to the database: No database YAML file
+[09/09/2026 16:16:44] [d(0)] core: Created user based module store
+[09/09/2026 16:16:57] [e(0)] core: Failed to open history file: /data/data/com.termux/files/home/.msf4/history with error: No such file or directory @ rb_sysopen - /data/data/com.termux/files/home/.msf4/history
+[09/09/2026 16:30:48] [e(0)] core: Module auxiliary/scanner/discovery/ping_sweep not found, and no loading errors found. If you're using a custom module refer to our wiki: https://docs.metasploit.com/docs/using-metasploit/intermediate/running-private-modules.html
+[09/09/2026 16:41:00] [e(0)] core: Failed to connect to the database: No database YAML file

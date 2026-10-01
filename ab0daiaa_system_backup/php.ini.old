@@ -1,0 +1,2 @@
+session.save_path = "/data/data/com.termux/files/home/accounting_project/sessions"
+opcache.enable = 0
